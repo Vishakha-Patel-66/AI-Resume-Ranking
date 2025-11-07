@@ -26,8 +26,8 @@ It helps HR professionals save time by automating the resume screening process.
 ---
 
 ## 📊 Datasets
-- **Resume Dataset:** as i uploaded above Resume.csv File 
-- **Job Dataset:** as i uploaded above Job.csv File
+- **Resume Dataset:** as i uploaded above "AI_Resume_Screening.csv" File 
+- **Job Dataset:** as i uploaded above "job_recommendation_dataset.csv" File
 
 ---
 
