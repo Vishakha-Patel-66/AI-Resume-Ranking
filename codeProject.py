@@ -185,7 +185,7 @@ if resumes_file and jobs_file:
     # ----------------------------------------
     with tab3:
         num_resumes = st.slider("Select number of resumes:", 5, len(resumes), 20, 5)
-        num_jobs = st.slider("Select number of jobs:", 5, len(jobs), 10, 5)
+        num_jobs = st.slider("Select number of jobs:", 5, len(jobs), 20, 5)
 
         job_tfidf_all = vectorizer.transform(jobs["cleaned"])
         heatmap_scores = cosine_similarity(resume_tfidf, job_tfidf_all)
@@ -217,8 +217,8 @@ if resumes_file and jobs_file:
     # 4. Clustered Bar Chart
     # ----------------------------------------
     with tab4:
-        num_resumes_bar = st.slider("Resumes for Bar Chart:", 5, len(resumes), 10, 5)
-        num_jobs_bar = st.slider("Jobs for Bar Chart:", 5, len(jobs), 5, 5)
+        num_resumes_bar = st.slider("Resumes for Bar Chart:", 5, len(resumes), 20, 5)
+        num_jobs_bar = st.slider("Jobs for Bar Chart:", 5, len(jobs), 15, 5)
 
         top_resumes = resumes.head(num_resumes_bar)
         top_jobs = jobs.head(num_jobs_bar)
@@ -249,3 +249,4 @@ if resumes_file and jobs_file:
 
 else:
     st.warning("⚠️ Please upload both Resume and Job datasets to continue.")
+
